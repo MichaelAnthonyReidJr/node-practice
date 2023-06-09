@@ -24,7 +24,7 @@ This document provides guidelines to help you achieve the following objectives i
 3. Implement the necessary logic within each route handler to interact with the MySQL database to achieve the following:
  - GET with params: given the endpoint: '/users/:id', retrieve user data from the database and send to client
  - GET with query: given the endpoint: '/users/?name={Michael Johnson}&age={41}', retrieve user data from the database and send to client
- - POST with body: endpoint: '/users', create a new user based on the following properties passed in through req.body. `{name: Billy Bob, age: 28, followers: 1000, verified: no, country: Germany}`
+ - POST with body: endpoint: '/users', create a new user based on the following properties passed in through req.body. `{name: Billy Bob, age: 28, followers: 1000, verified: false, country: Germany}`
  - PUT with params: endpoint: '/users/:id', id = 6 update user based on id from params.
  - DELETE with params: endpoint: '/users/:id', id = 10 delete user based on id from params.
 4. Send appropriate responses using `res.send()`. 
