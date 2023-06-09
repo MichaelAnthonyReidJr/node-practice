@@ -12,7 +12,7 @@ This document provides guidelines to help you achieve the following objectives i
 1. Create a new directory for your project and navigate to it in your terminal. Name it (node-practice)
 2. Initialize a new Node.js project using the `npm init -y` command.
 3. Install the required dependencies: `express` and `mysql2`.
-4. Create a new database on MySQL workbench and run the queries in `sqlQuery.template`
+4. Create a new database on MySQL workbench, create a default schema and run the queries in `sqlQuery.template`. Ensure that all the data in users table is there.
 5. Create a new file named `server.js`.
 6. Require the necessary modules (`express` and `mysql2`) in `server.js`.
 7. Set up the server using the `express()` function and specify a port for it to listen on.
@@ -23,10 +23,10 @@ This document provides guidelines to help you achieve the following objectives i
 2. Define five route handlers using the `app.get()`, `app.post()`, `app.put()`, and `app.delete()` methods provided by Express.
 3. Implement the necessary logic within each route handler to interact with the MySQL database to achieve the following:
  - GET with params: given the endpoint: '/users/:id', retrieve user data from the database and send to client
- - GET with query: given the endpoint: '/users/?name={name}', retrieve user data from the database and send to client
- - POST with body: endpoint: '/users', create a new user based on the following properties passed in through req.body. `{name: Billy Bob, age: 28, followers: 1000, verified: no, country: Germany}
- - PUT with params: endpoint: '/users/:id', update user based on id from params.
- - DELETE with params: endpoint: '/users/:id', delete user based on id from params.
+ - GET with query: given the endpoint: '/users/?name={Michael Johnson}&age={41}', retrieve user data from the database and send to client
+ - POST with body: endpoint: '/users', create a new user based on the following properties passed in through req.body. `{name: Billy Bob, age: 28, followers: 1000, verified: no, country: Germany}`
+ - PUT with params: endpoint: '/users/:id', id = 6 update user based on id from params.
+ - DELETE with params: endpoint: '/users/:id', id = 10 delete user based on id from params.
 4. Send appropriate responses using `res.send()`. 
 
 ## Objective 3: Serving static assets
